@@ -1,0 +1,8 @@
+- name: Example of creating serveral names into a single file
+  hosts: localhost
+  tasks: 
+     - name: Creating first name
+       lineinfile: create=true dest=/root/myname2.txt line='rami'
+
+     - name: Another name
+       lineinfile: create=true dest=/root/myname2.txt line='Test'
